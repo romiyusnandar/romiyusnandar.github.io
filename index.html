@@ -3,8 +3,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sirNewbies</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/sir.jpg">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/437d3d22e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hii.. here is sirNewbies...</h1>
+    <section id="blog">
+        <!-- navigation -->
+        <div class="navigation">
+            <a href="index.html" class="logo">
+                <i class="fas fa-blog"></i> Blog - sirNewbies
+            </a>
+            <!-- post filter -->
+            <nav>
+                <ul class="blog-filter">
+                    <li class="list blog-filter-active">All</li>
+                    <li class="list">Custom Kernel</li>
+                    <li class="list">Custom ROM</li>
+                    <li class="list">Web</li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ads -->
+        <!-- <div class="ad">
+            <a href="#">
+                <img src="images/ad-home.png" alt="ads">
+            </a>
+        </div> -->
+
+        <!-- container -->
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="images/kernel/quantum_charge.png" alt="kernel">
+                    <span class="category">Custom Kernel</span>
+                </div>
+
+                <div class="blog-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+        // blog filters
+        $(document).on('click', '.blog-filter li', function() {
+            $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+        });
+    </script>
 </body>
 </html>
