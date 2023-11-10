@@ -1,7 +1,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>sirNewbies</title>
     <!-- style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -9,21 +10,24 @@
     <link rel="shortcut icon" href="images/sir.jpg">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/437d3d22e9.js" crossorigin="anonymous"></script>
+    <!-- phospor icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
 </head>
 <body>
     <section id="blog">
         <!-- navigation -->
         <div class="navigation">
             <a href="index.html" class="logo">
-                <i class="fas fa-blog"></i> Blog - sirNewbies
+                sirNewbies
+                <i class="ph ph-seal-check" style="color: rgb(105, 175, 255)"></i>
             </a>
             <!-- post filter -->
             <nav>
                 <ul class="blog-filter">
-                    <li class="list blog-filter-active">All</li>
-                    <li class="list">Custom Kernel</li>
-                    <li class="list">Custom ROM</li>
-                    <li class="list">Web</li>
+                    <li class="list blog-filter-active" data-filter="all">All</li>
+                    <li class="list" data-filter="kernel">Custom Kernel</li>
+                    <li class="list" data-filter="rom">Custom ROM</li>
+                    <li class="list" data-filter="web">Web</li>
                 </ul>
             </nav>
         </div>
@@ -37,16 +41,182 @@
 
         <!-- container -->
         <div class="blog-container">
-            <div class="blog-box">
+
+            <!-- QUANTUM CHARGE -->
+            <div class="blog-box kernel">
                 <div class="blog-img">
                     <img src="images/kernel/quantum_charge.png" alt="kernel">
-                    <span class="category">Custom Kernel</span>
+                    <span class="category">Kernel</span>
                 </div>
 
-                <div class="blog-text"></div>
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom Kernel for Redmi Note 12 4G/4G NFC (topaz/tapas)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">Custom Kernel</span>
+                        <span class="published-time">2023-11-10</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ANOTHER KERNEL -->
+            <div class="blog-box kernel">
+                <div class="blog-img">
+                    <img src="images/kernel/another_kernel.png" alt="kernel">
+                    <span class="category">Kernel</span>
+                </div>
+
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom Kernel for Mi A1 (tissot)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">Custom Kernel</span>
+                        <span class="published-time">2023-10-23</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- COLT OS -->
+            <div class="blog-box rom">
+                <div class="blog-img">
+                    <img src="images/rom/colt_os.png" alt="kernel">
+                    <span class="category">ROM</span>
+                </div>
+
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom ROM for Redmi Note 7 (lavender)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">Custom Kernel</span>
+                        <span class="published-time">2023-07-06</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROTON PLUS TISSOT -->
+            <div class="blog-box rom">
+                <div class="blog-img">
+                    <img src="images/rom/proton_aosp.png" alt="kernel">
+                    <span class="category">ROM</span>
+                </div>
+
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom ROM for Mi A1 (tissot)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">ROM</span>
+                        <span class="published-time">2023-07-04</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROTON AOSP LAVENDER -->
+            <div class="blog-box rom">
+                <div class="blog-img">
+                    <img src="images/rom/proton_aosp.png" alt="kernel">
+                    <span class="category">ROM</span>
+                </div>
+
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom ROM for Redmi Note 7 (lavender)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">ROM</span>
+                        <span class="published-time">2023-07-04</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROJECT BLADE  -->
+            <div class="blog-box rom">
+                <div class="blog-img">
+                    <img src="images/rom/project_balze.png" alt="kernel">
+                    <span class="category">ROM</span>
+                </div>
+
+                <div class="blog-text">
+                    <a href="#">
+                        <strong>Custom ROM for Mi A1 (tissot)</strong>
+                    </a>
+
+                    <!-- time and category -->
+                    <div class="category-time">
+                        <span class="blog-category">ROM</span>
+                        <span class="published-time">2023-07-03</span>
+                    </div>
+
+                    <!-- publisher -->
+                    <div class="publisher-profile">
+                        <img src="images/sir.jpg" alt="sir">
+                        <span>sirNewbies</span>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- ads -->
+        <!-- <div class="ad">
+            <a href="#">
+                <img src="images/ad-home.png" alt="ads">
+            </a>
+        </div> -->
     </section>
+
+    <!-- footer -->
+    <footer>
+        <span class="copyright">Copyright 2023 - sirNewbies</span>
+        <div class="footer-social"></div>
+    </footer>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -56,6 +226,30 @@
         $(document).on('click', '.blog-filter li', function() {
             $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
         });
+
+        // post filter
+        $(document).ready(function() {
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.blog-box').show('1000');
+                }
+                else {
+                    $('.blog-box').not('.'+value).hide('1000');
+                    $('.blog-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+
+        /*FIX FILTER MENU*/
+        $(window).scroll(function(){
+            if ($(document).scrollTop() > 80) {
+                $('nav').addClass('fix-nav');
+            }
+            else {
+                $('nav').removeClass('fix-nav');
+            }
+        })
     </script>
 </body>
 </html>
